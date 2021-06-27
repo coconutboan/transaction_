@@ -1,5 +1,5 @@
 {
-  "name": "klaystagram",
+  "name": "transaction_front",
   "version": "0.0.1",
   "description": "Klaytn-based NFT photo licensing application",
   "main": "truffle-config.js",
