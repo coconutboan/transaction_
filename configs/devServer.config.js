@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = {
     contentBase: path.resolve(__dirname, '../static'),
     host: 'localhost',
-    port: 8888,
+    port: 3000,
     compress: true,
     historyApiFallback: true,
     hot: true,
