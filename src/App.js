@@ -1,15 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import AuthPage from 'pages/AuthPage'
-import FeedPage from 'pages/FeedPage'
-import Footer from 'components/Footer'
-import Nav from 'components/Nav'
-import Modal from 'components/Modal'
-import Toast from 'components/Toast'
+
+import Page from 'components/Page'
+import Form from 'components/Form'
 
 import * as authActions from 'redux/actions/auth'
 
-import './App.scss'
+import './App.css'
 
 class App extends Component {
   constructor(props) {
@@ -48,11 +45,8 @@ class App extends Component {
     const { isLoggedIn } = this.props
     return (
       <div className="App">
-        <Modal />
-        <Toast />
-        {isLoggedIn && <Nav />}
-        {isLoggedIn ? <FeedPage /> : <AuthPage />}
-        <Footer />
+
+        {isLoggedIn ?<Page /> : <Form />}
       </div>
     )
   }
